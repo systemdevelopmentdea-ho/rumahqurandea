@@ -94,26 +94,55 @@
       letter-spacing: 1px;
     }
 
-    .brand-badge {
+    .brand-badge-hero {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(251, 191, 36, 0.4);
-      padding: 6px 18px;
+      backdrop-filter: blur(10px);
+      border: 1.5px solid rgba(251, 191, 36, 0.45);
+      padding: 6px 18px 6px 8px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+    .hero-logo-box {
+      background: #ffffff;
+      padding: 5px 12px;
       border-radius: 40px;
-      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     }
-    .brand-icon {
-      font-size: 1.2rem;
+    .hero-logo-img {
+      height: 36px;
+      width: auto;
+      object-fit: contain;
+      display: block;
     }
-    .brand-badge-title {
-      font-size: 0.85rem;
+    .hero-badge-divider {
+      width: 1px;
+      height: 26px;
+      background: rgba(251, 191, 36, 0.4);
+    }
+    .hero-badge-info {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+    }
+    .hero-badge-subtitle {
+      font-size: 0.72rem;
+      color: #d1fae5;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .hero-badge-name {
+      font-size: 0.92rem;
       font-weight: 800;
       color: #fbbf24;
       letter-spacing: 0.5px;
-      text-transform: uppercase;
     }
 
     .hero-title {
@@ -780,6 +809,28 @@
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 24px;
     }
+    .footer-brand-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .footer-logo-bg {
+      background: #ffffff;
+      padding: 4px 10px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .footer-logo-img {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .footer-brand-box h4 { margin-bottom: 0 !important; }
     .footer-col h4 { font-size: 1.1rem; color: #fbbf24; margin-bottom: 12px; font-weight: 800; }
     .footer-col p { font-size: 0.85rem; color: #94a3b8; line-height: 1.6; }
     .footer-bottom { text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 24px; color: #64748b; font-size: 0.8rem; }
@@ -805,24 +856,42 @@
     .nav-brand {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       color: #ffffff;
       font-weight: 800;
-      font-size: 1rem;
+      text-decoration: none;
     }
-    .nav-brand-icon {
-      font-size: 1.3rem;
-      background: rgba(255,255,255,0.1);
-      width: 36px;
-      height: 36px;
+    .nav-logo-wrap {
+      background: #ffffff;
+      padding: 4px 8px;
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(251, 191, 36, 0.4);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      border: 1px solid rgba(251, 191, 36, 0.5);
     }
-    .nav-brand span span {
+    .nav-logo-img {
+      height: 30px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+    .nav-brand-text .brand-title {
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    .nav-brand-text .brand-subtitle {
+      font-size: 0.7rem;
+      font-weight: 800;
       color: #fbbf24;
+      letter-spacing: 0.8px;
     }
     .nav-links {
       display: flex;
@@ -1024,8 +1093,13 @@
 <nav class="site-nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-brand">
-      <span class="nav-brand-icon">📖</span>
-      <span>Rumah Qur'an <span>Dea Bakery</span></span>
+      <div class="nav-logo-wrap">
+        <img src="logo-dea.png" alt="Dea Bakery" class="nav-logo-img">
+      </div>
+      <div class="nav-brand-text">
+        <span class="brand-title">Rumah Qur'an</span>
+        <span class="brand-subtitle">DEA BAKERY</span>
+      </div>
     </a>
     <div class="nav-links">
       <a href="index.html" class="nav-item active">📅 Jadwal</a>
@@ -1057,9 +1131,15 @@
   <div class="header-inner">
     <div class="bismillah-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
     
-    <div class="brand-badge">
-      <span class="brand-icon">📖</span>
-      <span class="brand-badge-title">Rumah Qur'an Dea Bakery</span>
+    <div class="brand-badge-hero">
+      <div class="hero-logo-box">
+        <img src="logo-dea.png" alt="Dea Bakery" class="hero-logo-img">
+      </div>
+      <div class="hero-badge-divider"></div>
+      <div class="hero-badge-info">
+        <span class="hero-badge-subtitle">Program Pembinaan Keagamaan</span>
+        <span class="hero-badge-name">Rumah Qur'an Dea Bakery</span>
+      </div>
     </div>
 
     <h1 class="hero-title">Jadwal Pembelajaran <span>Al-Qur'an</span></h1>
@@ -1401,7 +1481,12 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-col">
-      <h4>Rumah Qur'an Dea Bakery</h4>
+      <div class="footer-brand-box">
+        <div class="footer-logo-bg">
+          <img src="logo-dea.png" alt="Dea Bakery" class="footer-logo-img">
+        </div>
+        <h4>Rumah Qur'an Dea Bakery</h4>
+      </div>
       <p>Lembaga pembinaan dan pembelajaran Al-Qur'an terstruktur, mulai dari tingkat dasar (TPQ), Tahsin UMMI, Tahfidz Juz 'Amma, Tasmi' 1 Juz, Qira'at Bersanad, hingga Kajian Tafsir.</p>
     </div>
     <div class="footer-col">
