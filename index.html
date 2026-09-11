@@ -784,10 +784,232 @@
     .footer-col p { font-size: 0.85rem; color: #94a3b8; line-height: 1.6; }
     .footer-bottom { text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 24px; color: #64748b; font-size: 0.8rem; }
 
+    /* ====== NAVBAR ====== */
+    .site-nav {
+      background: #022c22;
+      border-bottom: 1px solid rgba(251, 191, 36, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+    .nav-brand-icon {
+      font-size: 1.3rem;
+      background: rgba(255,255,255,0.1);
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(251, 191, 36, 0.4);
+    }
+    .nav-brand span span {
+      color: #fbbf24;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-item {
+      color: #d1fae5;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 20px;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .nav-item:hover {
+      background: rgba(255,255,255,0.1);
+      color: #ffffff;
+    }
+    .nav-item.active {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(4, 120, 87, 0.4);
+    }
+
+    /* DROPDOWN MENU */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-btn {
+      background: transparent;
+      border: none;
+      color: #d1fae5;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .dropdown:hover .dropdown-btn {
+      background: rgba(255,255,255,0.12);
+      color: #fbbf24;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      min-width: 270px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+      border: 1px solid var(--border);
+      padding: 8px;
+      margin-top: 6px;
+      z-index: 200;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      animation: fadeInDown 0.2s ease;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .dropdown-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: var(--text-main);
+      transition: background 0.15s;
+    }
+    .dropdown-item:hover {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+    }
+    .dropdown-item .di-icon {
+      font-size: 1.2rem;
+      margin-top: 2px;
+    }
+    .dropdown-item .di-title {
+      font-weight: 800;
+      font-size: 0.86rem;
+    }
+    .dropdown-item .di-desc {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .btn-nav-wa {
+      background: #25D366;
+      color: #ffffff;
+      padding: 7px 16px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.15s;
+    }
+    .btn-nav-wa:hover {
+      transform: scale(1.03);
+    }
+
+    /* MATERI QUICK BANNER */
+    .materi-quick-banner {
+      background: linear-gradient(135deg, #f0fdf4 0%, #fffbeb 100%);
+      border: 2px solid #86efac;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+    .mqb-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      background: #047857;
+      color: #ffffff;
+      padding: 3px 10px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+    .mqb-title {
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 2px;
+    }
+    .mqb-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .btn-mqb {
+      background: var(--primary-dark);
+      color: #fbbf24;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      white-space: nowrap;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 3px 10px rgba(6, 78, 59, 0.2);
+    }
+    .btn-mqb:hover {
+      background: var(--primary);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 640px) {
+      .materi-quick-banner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .btn-mqb {
+        width: 100%;
+        justify-content: center;
+      }
+      .nav-links { gap: 4px; }
+      .nav-item, .dropdown-btn { padding: 6px 10px; font-size: 0.78rem; }
+      .btn-nav-wa { display: none; }
+    }
+
     /* PRINT STYLES */
     @media print {
       body { background: #fff; padding-bottom: 0; }
-      header.hero-header, .simulator-wrap, .view-mode-buttons, .search-box-wrap, .cat-select, .floating-bot-bar, footer, .btn-print-table, .btn-wa-class {
+      .site-nav, header.hero-header, .simulator-wrap, .view-mode-buttons, .search-box-wrap, .cat-select, .floating-bot-bar, footer, .btn-print-table, .btn-wa-class, .materi-quick-banner {
         display: none !important;
       }
       .master-table-card { display: block !important; box-shadow: none; border: none; padding: 0; }
@@ -797,6 +1019,37 @@
   </style>
 </head>
 <body>
+
+<!-- TOP NAVBAR -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-icon">📖</span>
+      <span>Rumah Qur'an <span>Dea Bakery</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-item active">📅 Jadwal</a>
+      <div class="dropdown">
+        <button class="dropdown-btn">
+          📚 Materi ▾
+        </button>
+        <div class="dropdown-menu">
+          <a href="bahasa-arab.html" class="dropdown-item">
+            <span class="di-icon">📖</span>
+            <div>
+              <div class="di-title">Bahasa Arab (26 Kolom Tamyiz)</div>
+              <div class="di-desc">Kamus &amp; Panduan Terjemah Al-Qur'an</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="#asatidz" class="nav-item">👳‍♂️ Asatidz</a>
+      <a href="https://wa.me/6285736699198?text=Assalamu%27alaikum%20Admin%20Rumah%20Qur%27an%20Dea%20Bakery,%20saya%20ingin%20tanya%20informasi%20kelas" target="_blank" rel="noopener" class="btn-nav-wa">
+        💬 WA Admin
+      </a>
+    </div>
+  </div>
+</nav>
 
 <!-- ===== HEADER HERO ===== -->
 <header class="hero-header">
@@ -821,6 +1074,18 @@
 </header>
 
 <main class="container">
+  <!-- MATERI QUICK HIGHLIGHT BANNER -->
+  <div class="materi-quick-banner">
+    <div class="mqb-left">
+      <span class="mqb-badge">📚 MATERI BARU</span>
+      <div class="mqb-title">Kompilasi 26 Kolom Huruf Metode Tamyiz (Bahasa Arab Al-Qur'an)</div>
+      <div class="mqb-desc">Kamus terjemah lafziyyah kata hubung, kata tanya, &amp; kata ganti yang paling sering berulang dalam Al-Qur'an.</div>
+    </div>
+    <a href="bahasa-arab.html" class="btn-mqb">
+      Buka Materi Tamyiz ➔
+    </a>
+  </div>
+
   <!-- DYNAMIC FOCUS SECTION (HARI INI & BESOK) -->
   <section class="dynamic-focus-sec" id="dynamicFocusSec">
     <!-- 1. HARI INI CARD -->
@@ -1063,7 +1328,7 @@
   </div>
 
   <!-- ASATIDZ / PENGAJAR SECTION -->
-  <section class="asatidz-section">
+  <section class="asatidz-section" id="asatidz">
     <div class="section-heading">
       <span>👳‍♂️ Tim Asatidz &amp; Pengajar</span>
     </div>
