@@ -1307,7 +1307,7 @@
         <tbody>
           <!-- SENIN -->
           <tr>
-            <td rowspan="2" style="font-weight:800; text-align:center; vertical-align:middle; background:#fff5f5; color:#9a272a;">Senin</td>
+            <td rowspan="3" style="font-weight:800; text-align:center; vertical-align:middle; background:#fff5f5; color:#9a272a;">Senin</td>
             <td style="font-weight:800; text-align:center;">08.00 - 09.30</td>
             <td>
               <div class="table-slot-title">Tahsin Ibu-Ibu (Metode UMMI)</div>
@@ -1321,9 +1321,16 @@
               <div class="table-slot-teacher">Ustadz Dr. AQ Ahmad Budianto, S.Pd, MQ</div>
             </td>
           </tr>
+          <tr>
+            <td style="font-weight:800; text-align:center;">18.00 - 19.00</td>
+            <td>
+              <div class="table-slot-title">Tahsin Bapak-Bapak (Metode UMMI)</div>
+              <div class="table-slot-teacher">Ustadz Rusdan</div>
+            </td>
+          </tr>
           <!-- SELASA -->
           <tr>
-            <td rowspan="2" style="font-weight:800; text-align:center; vertical-align:middle; background:#fff5f5; color:#9a272a;">Selasa</td>
+            <td rowspan="3" style="font-weight:800; text-align:center; vertical-align:middle; background:#fff5f5; color:#9a272a;">Selasa</td>
             <td style="font-weight:800; text-align:center;">08.00 - 09.00</td>
             <td>
               <div class="table-slot-title">Talaqqi dan Tadabbur Al-Qur'an</div>
@@ -1335,6 +1342,13 @@
             <td>
               <div class="table-slot-title">Tahsin Ibu-Ibu (Metode UMMI)</div>
               <div class="table-slot-teacher">Ust Widia, Ust Diva, Ust Romiyati, Ust Aisyah</div>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight:800; text-align:center;">18.00 - 19.00</td>
+            <td>
+              <div class="table-slot-title">Tahsin Bapak-Bapak (Metode UMMI)</div>
+              <div class="table-slot-teacher">Ustadz Rusdan</div>
             </td>
           </tr>
           <!-- RABU -->
@@ -1507,6 +1521,11 @@
         <div class="asatidz-name">Ustadzah Santia</div>
         <div class="asatidz-role">Koordinator TPQ</div>
       </div>
+      <div class="asatidz-card">
+        <div class="asatidz-avatar">🧔</div>
+        <div class="asatidz-name">Ustadz Rusdan</div>
+        <div class="asatidz-role">Tahsin UMMI (Bapak-Bapak)</div>
+      </div>
     </div>
   </section>
 </main>
@@ -1557,11 +1576,13 @@
     { id: "sn-2", day: 1, dayName: "Senin", timeStart: "10:00", timeEnd: "11:15", timeDisplay: "10.00 - 11.15 WIB", title: "Qira'at Ashim Bersanad", subTitle: "Riwayat Syu'bah & Hafsh Thariq Asy-Syathibiyah", category: "qiraat", categoryLabel: "Qira'at Bersanad", teachers: ["Ustadz Dr. AQ Ahmad Budianto, S.Pd, MQ"], target: "Umum", desc: "Kajian Qira'at Bersanad", badge: "Qira'at" },
     { id: "sn-3", day: 1, dayName: "Senin", timeStart: "13:50", timeEnd: "15:00", timeDisplay: "13.50 - 15.00 WIB", title: "TPQ Anak-Anak (Tahsin)", subTitle: "Sesi 1", category: "tpq", categoryLabel: "TPQ Anak", teachers: ["Ustadzah Santia (Koordinator)", "Tim Asatidz TPQ"], target: "Anak-anak", desc: "Program Tahsin Anak", badge: "TPQ Sesi 1" },
     { id: "sn-4", day: 1, dayName: "Senin", timeStart: "15:45", timeEnd: "17:00", timeDisplay: "15.45 - 17.00 WIB", title: "TPQ Anak-Anak (Tahsin)", subTitle: "Sesi 2", category: "tpq", categoryLabel: "TPQ Anak", teachers: ["Ustadzah Santia (Koordinator)", "Tim Asatidz TPQ"], target: "Anak-anak", desc: "Program Tahsin Anak", badge: "TPQ Sesi 2" },
+    { id: "sn-5", day: 1, dayName: "Senin", timeStart: "18:00", timeEnd: "19:00", timeDisplay: "18.00 - 19.00 WIB", title: "Tahsin Bapak-Bapak (Metode UMMI)", subTitle: "", category: "tahsin", categoryLabel: "Tahsin UMMI", teachers: ["Ustadz Rusdan"], target: "Bapak-Bapak", desc: "Latihan Tahsin Intensif Bapak-Bapak", badge: "Tahsin UMMI" },
     // SELASA
     { id: "sl-1", day: 2, dayName: "Selasa", timeStart: "08:00", timeEnd: "09:00", timeDisplay: "08.00 - 09.00 WIB", title: "Talaqqi dan Tadabbur Al-Qur'an", subTitle: "", category: "talaqqi", categoryLabel: "Talaqqi", teachers: ["Ustadz H. Abdul Karim, M.Pd"], target: "Umum", desc: "Talaqqi dan Tadabbur", badge: "Talaqqi" },
     { id: "sl-2", day: 2, dayName: "Selasa", timeStart: "09:30", timeEnd: "11:00", timeDisplay: "09.30 - 11.00 WIB", title: "Tahsin Ibu-Ibu (Metode UMMI)", subTitle: "", category: "tahsin", categoryLabel: "Tahsin UMMI", teachers: ["Ust Widia", "Ust Diva", "Ust Romiyati", "Ust Aisyah"], target: "Ibu-Ibu", desc: "Latihan Tahsin Intensif", badge: "Tahsin UMMI" },
     { id: "sl-3", day: 2, dayName: "Selasa", timeStart: "13:50", timeEnd: "15:00", timeDisplay: "13.50 - 15.00 WIB", title: "TPQ Anak-Anak (Tahsin)", subTitle: "Sesi 1", category: "tpq", categoryLabel: "TPQ Anak", teachers: ["Ustadzah Santia (Koordinator)", "Tim Asatidz TPQ"], target: "Anak-anak", desc: "Program Tahsin Anak", badge: "TPQ Sesi 1" },
     { id: "sl-4", day: 2, dayName: "Selasa", timeStart: "15:45", timeEnd: "17:00", timeDisplay: "15.45 - 17.00 WIB", title: "TPQ Anak-Anak (Tahsin)", subTitle: "Sesi 2", category: "tpq", categoryLabel: "TPQ Anak", teachers: ["Ustadzah Santia (Koordinator)", "Tim Asatidz TPQ"], target: "Anak-anak", desc: "Program Tahsin Anak", badge: "TPQ Sesi 2" },
+    { id: "sl-5", day: 2, dayName: "Selasa", timeStart: "18:00", timeEnd: "19:00", timeDisplay: "18.00 - 19.00 WIB", title: "Tahsin Bapak-Bapak (Metode UMMI)", subTitle: "", category: "tahsin", categoryLabel: "Tahsin UMMI", teachers: ["Ustadz Rusdan"], target: "Bapak-Bapak", desc: "Latihan Tahsin Intensif Bapak-Bapak", badge: "Tahsin UMMI" },
     // RABU
     { id: "rb-1", day: 3, dayName: "Rabu", timeStart: "08:00", timeEnd: "09:00", timeDisplay: "08.00 - 09.00 WIB", title: "Tartil Al-Qur'an (Makhorijul Huruf)", subTitle: "", category: "tahsin", categoryLabel: "Tartil", teachers: ["Ustadz Arga Prasetyo, CLQ"], target: "Umum", desc: "Makhorijul Huruf", badge: "Makhraj Huruf" },
     { id: "rb-2", day: 3, dayName: "Rabu", timeStart: "09:40", timeEnd: "11:10", timeDisplay: "09.40 - 11.10 WIB", title: "Kelas Tajwid dan Fiqih", subTitle: "", category: "kajian", categoryLabel: "Tajwid & Fiqih", teachers: ["Ustadz Dr. AQ Ahmad Budianto, S.Pd, MQ"], target: "Umum", desc: "Kaidah Tajwid & Fiqih", badge: "Tajwid & Fiqih" },
