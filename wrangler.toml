@@ -1,6 +1,13 @@
 name = "rqdea-yamur"
-pages_build_output_dir = "."
+main = "_worker.js"
 compatibility_date = "2024-10-01"
+
+# ==========================================
+# Static Assets Configuration
+# ==========================================
+[assets]
+directory = "."
+binding = "ASSETS"
 
 # ==========================================
 # Cloudflare D1 Database Binding (SQLite)

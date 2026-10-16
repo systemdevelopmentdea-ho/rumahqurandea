@@ -1,0 +1,7 @@
+.git
+.gitignore
+.assetsignore
+wrangler.toml
+schema.sql
+AGENTS.md
+README.md
