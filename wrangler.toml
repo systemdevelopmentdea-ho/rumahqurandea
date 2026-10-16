@@ -1,0 +1,18 @@
+name = "rqdea-yamur"
+pages_build_output_dir = "."
+compatibility_date = "2024-10-01"
+
+# ==========================================
+# Cloudflare D1 Database Binding (SQLite)
+# ==========================================
+[[d1_databases]]
+binding = "DB"
+database_name = "rumahquran"
+database_id = "f6e4b531-ea65-4a36-8f37-0b49f3df4936"
+
+# ==========================================
+# Cloudflare R2 Object Storage Binding
+# ==========================================
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "rumahquran"
